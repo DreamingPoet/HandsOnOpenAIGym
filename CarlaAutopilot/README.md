@@ -27,8 +27,8 @@ step  = UE 1 fps， 到达期望目的的控制步骤数
 // 关于protobuf 的数据结构说明
 https://protobuf.dev/reference/cpp/api-docs/google.protobuf.descriptor/#FieldDescriptor.CppType.details
 
+``` python
 def _read_observation(self):
-
     pos_x  =player_measurements.transform.location.x / 100,  # cm -> m
     pos_y = player_measurements.transform.location.y / 100,
     speed = player_measurements.forward_speed,
@@ -178,4 +178,4 @@ EpisodeReady {
     ready: BOOL
 }
 
-
+```
